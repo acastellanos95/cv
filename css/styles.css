@@ -44,7 +44,7 @@ a {
 }
 
 .top-container {
-  background-color: #96c4ec;
+  background-color: #162447;
   position: relative;
   padding-top: 100px;
 }
@@ -61,17 +61,14 @@ a {
 
 .bottom-cloud {
   position: absolute;
-  left: 35%;
-  bottom: 40%;
+  left: 20em;
+  bottom: 15em;
 }
 
 .top-cloud {
   position: absolute;
   right: 35%;
   top: 10%;
+  display: none;
 }
 
-.mountain-img {
-  position: relative;
-  top: 4px;
-}
