@@ -1,13 +1,12 @@
 body {
-  margin: 0;
   color: #40514E;
   text-align: center;
   font-family: 'Merriweather', serif;
 }
 
-.top-description {
-  width: 30%;
-  margin: auto;
+a {
+  color: #fff;
+  text-decoration: none;
 }
 
 p {
@@ -31,14 +30,45 @@ h3 {
   font-family: 'Montserrat', sans-serif;
   color: #11999E;
 }
-a {
-  color: #11999E;
-  text-decoration: none;
-  font-weight: bold;
-  line-height: 5;
-  padding: 0 20px 0;
+
+/* Menu section */
+#menu {
+  background-color: #162447;
+}
+
+.container-fluid {
+  padding: 0 15%;
+}
+
+/* navigation bar */
+.nav-link {
   font-family: 'Montserrat', sans-serif;
-  font-size: 23px;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.navbar {
+  padding-top: 0;
+}
+
+.logo {
+  font-size: 2rem;
+}
+
+/* Who am I section */
+
+#whoami .container-fluid {
+  background-color: #162447;
+  padding: 5% 7%;
+}
+
+#whoami h1, h2 {
+  margin: 0;
+}
+
+.top-description {
+  width: 30%;
+  margin: auto;
 }
 
 .a-description {
@@ -62,9 +92,7 @@ a {
 }
 
 .top-container {
-  background-color: #162447;
-  position: relative;
-  padding-top: 100px;
+
 }
 
 .middle-container {
@@ -103,24 +131,6 @@ hr {
 
 .pro {
   text-decoration: underline;
-}
-
-.bottom-cloud {
-  position: absolute;
-  left: 20em;
-  bottom: 15em;
-}
-
-.top-cloud {
-  position: absolute;
-  right: 35%;
-  top: 10%;
-  display: none;
-}
-
-.mountain-img {
-  position: relative;
-  top: 4px;
 }
 
 .btn {
