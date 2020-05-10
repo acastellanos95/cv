@@ -1,7 +1,5 @@
 // Menu apperance and disappear
 
-
-
 $( document ).ready(function() {
     var prevScrollPosition = $(document).scrollTop();
 
