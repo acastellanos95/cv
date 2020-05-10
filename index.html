@@ -12,38 +12,32 @@
   <link rel="icon" href="images/favicon.ico">
   <!-- google fonts -->
   <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento&display=swap" rel="stylesheet">
-  <!-- awesome fonts -->
-  <script src="https://kit.fontawesome.com/900ac71d5e.js" crossorigin="anonymous"></script>
-  <!-- CSS -->
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  <!-- mathjax -->
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-  </script>
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-  <section id="menu">
-    <div class="container-fluid">
-      <nav class="navbar navbar-expand-md navbar-dark ml-0">
+      <nav class="navbar navbar-expand-lg navbar-dark ml-0 fixed-top">
 
-        <a class="navbar-brand logo" href="index.html">$$\{\hbar\};$$</a>
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo.png" alt="logo-image" id="logo-img">
+        </a>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarpage">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarToggler">
+        <div class="collapse navbar-collapse" id="navbarpage">
 
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="">About me</a>
+              <a class="nav-link" href="https://drive.google.com/file/d/1sCHyJpq87VKnGW3nmhM01ti48QiJ2Z1y/view?usp=sharing" target="_blank">CV</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="">Projects</a>
+              <a class="nav-link" href="#about-me">About me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="">Research</a>
@@ -55,27 +49,48 @@
 
         </div>
       </nav>
-    </div>
-  </section>
 
-  <section id="whoami">
+
     <div class="container-fluid">
       <h1>I'm Andre.</h1>
       <h2 class="a-description">a physicist & programmer.</h2>
     </div>
-  </section>
+
 
   <section id="about-me">
+    <div class="profile">
+      <h2>Hello.</h2>
+      <p class="top-description">I'm a physicist that loves coding and solving problems.</p>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12 skills-heading">
+          <h2>My Skills.</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 skills-row">
+          <img class="gif-atom" src="images/atom.gif" alt="atom-gif">
+          <h3>Computational Physics</h3>
+          <p>I studied Bsc Physics at BUAP. I was a first class student with a lot of studies in coding and computational physics.</p>
+        </div>
+        <div class="col-lg-6 skills-row">
+          <img class="gif-coding" src="images/coding.gif" alt="coding-gif">
+          <h3>Coding</h3>
+          <p>I'm an active learner that happens to love learning new habilities in coding like data structures and algorithms in C++.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- <section id="about-me">
     <div class="container-fluid">
       <div id="carouselaboutme" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselaboutme" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselaboutme" data-slide-to="1"></li>
-          <li data-target="#carouselaboutme" data-slide-to="2"></li>
-        </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <h3>Studies</h3>
+            <h2>I graduated in B.Sc. Physics at BUAP.</h2>
+            <img class="molecule-img" src="images/molecula.png" alt="molecula-image">
+            <h3>I specialized in computational physics.</h3>
           </div>
           <div class="carousel-item">
             <h3>Achievements</h3>
@@ -94,28 +109,50 @@
         </a>
       </div>
     </div>
-  </section>
+  </section> -->
 
-  <div class="middle-container">
-    <div class="profile">
-      <img class="profile-picture" src="images/profile_picture.jpeg" alt="img-profile" style="border-radius: 50%;">
-      <h2>Hello.</h2>
-      <p class="top-description">I'm a physicist that loves coding and solving problems.</p>
-    </div>
-    <hr>
-    <div class="skills">
-      <h2>My Skills.</h2>
-      <div class="skill-row">
-        <img class="gif-atom" src="images/atom.gif" alt="atom-gif">
-        <h3>Computational Physics</h3>
-        <p>I studied Bsc Physics at BUAP. I was a first class student with a lot of studies in coding and computational physics.</p>
+  <!-- Projects Section -->
+
+  <section id="projects">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <img src="" alt="">
+          <h5>Simulation of CERN detectors</h5>
+          <ul>
+            <li>Learned physical phenomena and properties of gaseous detectors installed at CMS</li>
+            <li>Studied C++ programming language and Geant4 simulation software to develop software</li>
+            <li>Performed physics computational simulations</li>
+            <li>Presented ideas and results to team members and supervisor</li>
+            <li>Used RHEL linux distribution</li>
+          </ul>
+          <button type="button" name="button">See Code</button>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <img src="" alt="">
+          <h5>Simulation of carbon nanotubes in water</h5>
+          <ul>
+            <li>Studied fundamentals and advanced topics in molecular simulation</li>
+            <li>Used GROMACS</li>
+            <li>Learned fortran90</li>
+          </ul>
+          <button type="button" name="button">See Code</button>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <img src="" alt="">
+          <h5>Simulation Methods</h5>
+          <ul>
+            <li>Learned physical phenomena and properties of gaseous detectors installed at CMS</li>
+            <li>Studied C++ programming language and Geant4 simulation software to develop software</li>
+            <li>Performed physics computational simulations</li>
+            <li>Presented ideas and results to team members and supervisor</li>
+            <li>Used RHEL linux distribution</li>
+          </ul>
+          <button type="button" name="button">See Code</button>
+        </div>
       </div>
-      <div class="skill-row">
-        <img class="gif-coding" src="images/coding.gif" alt="coding-gif">
-        <h3>Coding</h3>
-        <p>I'm an active learner that happens to love learning new habilities in coding like data structures and algorithms in C++.</p>
-      </div>
     </div>
+  </section>
     <hr>
     <div class="contact-me">
       <h2>Get In Touch</h2>
@@ -123,7 +160,6 @@
       <p>Let's talk about any problem and try to solve it.</p>
       <a class="btn" href="mailto:acastellanos@gmail.com">CONTACT ME</a>
     </div>
-  </div>
 
 
   <div class="bottom-container">
@@ -132,6 +168,15 @@
     <a class="footer-link" target="_blank" href="https://acastellanos95.github.io/my-personal-site/">Website</a>
     <p>© 2020 Andre Castellanos.</p>
   </div>
+  <!-- awesome fonts -->
+  <script src="https://kit.fontawesome.com/900ac71d5e.js" crossorigin="anonymous"></script>
+  <!-- CSS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <!-- Jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/index.js" charset="utf-8"></script>
 </body>
 
 </html>

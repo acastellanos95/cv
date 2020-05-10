@@ -1,4 +1,9 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
+  padding-top: 6%;
   color: #40514E;
   text-align: center;
   font-family: 'Merriweather', serif;
@@ -31,11 +36,6 @@ h3 {
   color: #11999E;
 }
 
-/* Menu section */
-#menu {
-  background-color: #162447;
-}
-
 .container-fluid {
   padding: 0 15%;
 }
@@ -48,11 +48,12 @@ h3 {
 }
 
 .navbar {
-  padding-top: 0;
+  background-color: #162447;
+  padding: 1.5% 20%;
 }
 
-.logo {
-  font-size: 2rem;
+#logo-img {
+  width: 70%;
 }
 
 /* Who am I section */
@@ -64,6 +65,59 @@ h3 {
 
 #whoami h1, h2 {
   margin: 0;
+}
+
+/* About me */
+
+#about-me {
+  background-color: #fff;
+  margin: 3% 3%;
+}
+
+#about-me h2, p{
+  line-height: 2;
+  margin: 3% 0;
+}
+
+.skills-heading {
+  text-align: center;
+}
+
+.skills-row {
+  text-align: left;
+}
+
+/* #about-me {
+  background-color: #162447;
+}
+
+#about-me .container-fluid {
+  padding: 3.2% 17%;
+}
+
+#about-me h2{
+  font-size: 2rem;
+  color: #fff;
+}
+
+#about-me h3{
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+.molecule-img {
+  width: 10%;
+  border-radius: 50%;
+  margin: 20px;
+} */
+
+/* Projects */
+
+#projects {
+  background-color: #1b1b2f;
+  padding: 4% 3%;
+  color: white;
+  font-family: 'Playfair Display', serif;
 }
 
 .top-description {
@@ -78,7 +132,7 @@ h3 {
 .gif-atom {
   background-color: lavender;
   border-radius: 50%;
-  width: 25%;
+  width: 20%;
   float: left;
   margin-right: 30px;
 }
@@ -86,32 +140,9 @@ h3 {
 .gif-coding {
   background-color: lavender;
   border-radius: 50%;
-  width: 25%;
+  width: 20%;
   float: right;
   margin-left: 30px;
-}
-
-.top-container {
-
-}
-
-.middle-container {
-  padding: 100px 0;
-  background-color: white;
-}
-
-.bottom-container {
-  background-color: #66bfbf;
-}
-
-.bottom-container a{
-  color: white;
-}
-
-.bottom-container p {
-  color: #EAF6F6;
-  margin: 0;
-  padding-bottom: 30px;
 }
 
 hr {
