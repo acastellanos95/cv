@@ -50,6 +50,7 @@ h3 {
 .navbar {
   background-color: #162447;
   padding: 1.5% 20%;
+  transition: top 0.3s;
 }
 
 #logo-img {

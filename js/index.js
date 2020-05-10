@@ -1,9 +1,18 @@
 // Menu apperance and disappear
 
+
+
 $( document ).ready(function() {
-    var scrollCurrentPosition = 0;
+    var prevScrollPosition = $(document).scrollTop();
 
     $(document).scroll(function() {
-      console.log($(document).scrollTop());
+      var currentScrollPosition = $(document).scrollTop();
+      if(currentScrollPosition > prevScrollPosition) {
+        $(".navbar").css("top", "-130px");
+      }
+      else {
+        $(".navbar").css("top", "0");
+      }
+      prevScrollPosition = currentScrollPosition;
     });
 });
