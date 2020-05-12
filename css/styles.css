@@ -3,6 +3,7 @@ html {
 }
 
 body {
+  background-color: #162447;
   padding-top: 6%;
   color: #40514E;
   text-align: center;
@@ -19,7 +20,6 @@ p {
 }
 
 h1 {
-  margin: 50px auto 0;
   font-family: 'Sacramento', cursive;
   font-size: 5.625rem;
   color: #66bfbf;
@@ -34,10 +34,6 @@ h2 {
 h3 {
   font-family: 'Montserrat', sans-serif;
   color: #11999E;
-}
-
-.container-fluid {
-  padding: 0 15%;
 }
 
 /* navigation bar */
@@ -59,20 +55,32 @@ h3 {
 
 /* Who am I section */
 
-#whoami .container-fluid {
+#who-am-i {
   background-color: #162447;
-  padding: 5% 7%;
+  margin-bottom: 100px;
 }
 
-#whoami h1, h2 {
-  margin: 0;
+#who-am-i h1, h2 {
+  margin: 3% auto;
+  line-height: 3;
+}
+
+#who-am-i .a-description {
+  font-family: 'Roboto Mono', monospace;
+  color: white;
+}
+
+#who-am-i .I-am {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 700;
+  color: white;
 }
 
 /* About me */
 
 #about-me {
   background-color: #fff;
-  margin: 3% 3%;
+  padding: 2% 7% 4%;
 }
 
 #about-me h2, p{
@@ -124,10 +132,6 @@ h3 {
 .top-description {
   width: 30%;
   margin: auto;
-}
-
-.a-description {
-  font-weight: normal;
 }
 
 .gif-atom {
